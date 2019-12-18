@@ -1,0 +1,417 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Task Management",
+    "description": "Managing user and task",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://task-management-13.herokuapp.com"
+    }
+  ],
+  "paths": {
+    "/users/logout": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/users": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n\t\"name\": \"Cuong\",\n\t\"email\": \"sweetie1391991@gmail.com\",\n\t\"password\": \"abcdef\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Error",
+            "content": {
+              "text/html; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/users/me": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "patch": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n\t\"name\": \"Cuong\",\n\t\"email\": \"sweetie1391991@gmail.com\",\n\t\"password\": \"abcdef\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/users/logoutAll": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/tasks": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string"
+                  },
+                  "completed": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n\t\"description\": \"code a program\",\n\t\"completed\": false\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["Task"]
+      },
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["Task"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/tasks/taskID": {
+      "delete": {
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["Task"]
+      },
+      "patch": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "completed": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n\t\"completed\": true\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["Task"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    },
+    "/users/login": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n\t\"email\": \"sweetie1391991@gmail.com\",\n\t\"password\": \"abcdef\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://task-management-13.herokuapp.com"
+          }
+        ],
+        "tags": ["User"]
+      },
+      "servers": [
+        {
+          "url": "https://task-management-13.herokuapp.com"
+        }
+      ]
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "http://yourauthurl.com",
+            "scopes": {
+              "scope_name": "Enter your scopes here"
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "User"
+    },
+    {
+      "name": "Task"
+    }
+  ]
+}
